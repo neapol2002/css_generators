@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Generators</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<div class="container">
+		<!-- Title -->
+		<div class="main-title">
+			<h1>CSS Generators</h1>
+		</div>
+		<!-- Border-radius -->
+		<div class="border-radius-generator">
+			<h2>border-radius generator</h2>
+			<table>
+				<tr>
+					<td>
+						<label for="top_left">top-left</label>
+						<input id="top_left" type="range" min="0" max="75" step="1" value="75">
+					</td>
+					<td></td>
+					<td>
+						<label for="top_right">top-right</label>
+						<input id="top_right" type="range" min="0" max="75" step="1" value="75">
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<div class="result_box"></div>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<label for="bottom_left">bottom-left</label>
+						<input id="bottom_left" type="range" min="0" max="75" step="1" value="0">
+					</td>
+					<td></td>
+					<td>
+						<label for="bottom_right">bottom-right</label>
+						<input id="bottom_right" type="range" min="0" max="75" step="1" value="75">
+					</td>
+				</tr>
+			</table>
+			<label for="result_border_css">Результат</label>
+			<textarea id="result_border_css" readonly></textarea>
+		</div>
+		<!-- Text shadow -->
+		<div class="text-shadow-generator">
+			<h2>text-shadow generator</h2>
+			<div class="example">Test Text</div>
+			<label for="offset_x">Смещение по оси x</label>
+			<input id="offset_x" type="range" min="-15" max="15" step="1" value="4">
+			<label for="offset_y">Смещение по оси y</label>
+			<input id="offset_y" type="range" min="-15" max="15" step="1" value="-1">
+			<label for="blur">Размытие</label>
+			<input id="blur" type="range" min="0" max="15" step="1" value="0">
+			<label for="color">Цвет</label>
+			<input type="color" value="#ff0000">
+			<label for="opacity">Прозрачность</label>
+			<input id="opacity" type="range" min="0" max="1" step="0.01" value="1">
+			<label for="result">Результат</label>
+			<textarea id="result" readonly></textarea>
+		</div>
+		<!-- Box shadow -->
+		<div class="box-shadow-generator">
+			<h2>box-shadow generator</h2>
+			<div class="result_box"></div>
+			<label for="inset">Тень внутри элемента?</label>
+			<input type="checkbox" id="inset">
+			<label for="offset_x">Смещение по оси x</label>
+			<input id="offset_x" type="range" min="-25" max="25" step="1" value="0">
+			<label for="offset_y">Смещение по оси y</label>
+			<input id="offset_y" type="range" min="-25" max="25" step="1" value="0">
+			<label for="blur">Размытие</label>
+			<input id="blur" type="range" min="0" max="25" step="1" value="8">
+			<label for="size">Растяжение</label>
+			<input id="size" type="range" min="-20" max="20" step="1" value="6">
+			<label for="color">Цвет</label>
+			<input type="color" value="#000000">
+			<label for="opacity">Прозрачность</label>
+			<input id="opacity" type="range" min="0" max="1" step="0.01" value="0.5">
+			<label for="resultRgba">Результат</label>
+			<textarea id="resultRgba" readonly></textarea>
+		</div>
+		<!-- Triangle generator -->
+		<div class="triangle-generator">
+			<h2>triangle generator</h2>
+			<label for="width">Размер</label>
+			<input id="width" type="range" min="0" max="60" step="1" value="50">
+			<label for="color">Цвет</label>
+			<input type="color" value="#ff7700">
+			<table>
+				<tr>
+					<td>
+						<label for="top_left">top-left</label>
+						<input id="top_left" type="radio" name="triangle" value="top_left" checked>
+					</td>
+					<td>
+						<label for="top">top</label>
+						<input id="top" type="radio" name="triangle" value="top">
+					</td>
+					<td>
+						<label for="top_right">top-right</label>
+						<input id="top_right" type="radio" name="triangle" value="top_right">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="left">left</label>
+						<input id="left" type="radio" name="triangle" value="left">
+					</td>
+					<td>
+						<div class="triangle"></div>
+					</td>
+					<td>
+						<label for="right">right</label>
+						<input id="right" type="radio" name="triangle" value="right">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="bottom_left">bottom-left</label>
+						<input id="bottom_left" type="radio" name="triangle" value="bottom_left">
+					</td>
+					<td>
+						<label for="bottom">bottom</label>
+						<input id="bottom" type="radio" name="triangle" value="bottom">
+					</td>
+					<td>
+						<label for="bottom_right">bottom-right</label>
+						<input id="bottom_right" type="radio" name="triangle" value="bottom_right">
+					</td>
+				</tr>
+			</table>
+			<label for="result">Результат</label>
+			<textarea id="result" readonly></textarea>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
